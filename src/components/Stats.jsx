@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
+
 const Stats = ({percentage, label}) => (
 <>
-<span class="label">{label}</span>
-<span class="percentage">{percentage}</span>
+<span className="label">{label}</span>
+<span className="percentage">{percentage}%</span>
 </>   
 );
 Stats.propTypes = {
-        percentage: PropTypes.string.isRequired,
+        percentage: PropTypes.number.isRequired,
         label:PropTypes.string.isRequired,
 }
 export default  Stats;

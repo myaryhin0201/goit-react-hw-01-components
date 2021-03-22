@@ -2,7 +2,7 @@ import Profile from './Profile';
 
 const ProfileList = ({socialProfile}) => 
 (
-<div className="profileList">
+<div className="profileList" >
 <Profile
     name = {socialProfile.name}
     tag={socialProfile.tag}

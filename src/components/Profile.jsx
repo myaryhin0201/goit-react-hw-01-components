@@ -1,3 +1,4 @@
+import '../sass/profile.css';
 import PropTypes from 'prop-types';
 const imageDefault = `https://martialartsplusinc.com/wp-content/uploads/2017/04/default-image-620x600.jpg`;
 const Profile = ({name, tag, location, avatar, stats}) => (
@@ -7,7 +8,7 @@ const Profile = ({name, tag, location, avatar, stats}) => (
       src={avatar}
       alt={name}
       className="avatar"
-      width="300"
+      width="250"
     />
     <p className="name">{name}</p>
     <p className="tag">@{tag}</p>
