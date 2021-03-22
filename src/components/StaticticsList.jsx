@@ -1,5 +1,5 @@
 import Stats from './Stats';
-import '../sass/statics.css';
+import '../sass/statics.scss';
 const colorStats = [
     { color: '#51c4f5' },
     { color: '#a43cf5' },

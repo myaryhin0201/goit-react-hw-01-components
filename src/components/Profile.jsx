@@ -1,4 +1,4 @@
-import '../sass/profile.css';
+import '../sass/profile.scss';
 import PropTypes from 'prop-types';
 const imageDefault = `https://martialartsplusinc.com/wp-content/uploads/2017/04/default-image-620x600.jpg`;
 const Profile = ({name, tag, location, avatar, stats}) => (
