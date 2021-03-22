@@ -5,7 +5,8 @@ import statdata from './json/stat-data.json';
 import FriendList from './components/FriendList';
 import friends from './json/friends.json';
 import TransactionHistory from './components/TransactionHistory';
-import transactions from './json/transaction.json'
+import transactions from './json/transaction.json';
+
 function App() {
   return (
     <div className="App">
