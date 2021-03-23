@@ -1,15 +1,14 @@
 import Profile from './Profile';
 
-const ProfileList = ({socialProfile}) => 
-(
-<div className="profileList" >
-<Profile
-    name = {socialProfile.name}
-    tag={socialProfile.tag}
-    location={socialProfile.location}
-    avatar={socialProfile.avatar}
-    stats={socialProfile.stats}
+const ProfileList = ({ socialProfile }) => (
+  <div className="profileList">
+    <Profile
+      name={socialProfile.name}
+      tag={socialProfile.tag}
+      location={socialProfile.location}
+      avatar={socialProfile.avatar}
+      stats={socialProfile.stats}
     />
-</div>  
-); 
+  </div>
+);
 export default ProfileList;

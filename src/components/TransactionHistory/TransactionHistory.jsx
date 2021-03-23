@@ -1,7 +1,7 @@
 import Transaction from './Transaction';
 import './Transaction.scss';
-const TransactionHistory = ({transHistory}) => (
-<table className="transaction-history">
+const TransactionHistory = ({ transHistory }) => (
+  <table className="transaction-history">
     <thead>
       <tr>
         <th>Type</th>
@@ -10,17 +10,16 @@ const TransactionHistory = ({transHistory}) => (
       </tr>
     </thead>
     <tbody>
-        {transHistory.map((transaction)=>(
-            <tr key={transaction.id}>
-            <Transaction 
-            type = {transaction.type}
-            amount = {transaction.amount}
-            currency = {transaction.currency}
-            />
-            </tr>
-        ))
-    }
+      {transHistory.map(transaction => (
+        <tr key={transaction.id}>
+          <Transaction
+            type={transaction.type}
+            amount={transaction.amount}
+            currency={transaction.currency}
+          />
+        </tr>
+      ))}
     </tbody>
-</table>
+  </table>
 );
 export default TransactionHistory;
