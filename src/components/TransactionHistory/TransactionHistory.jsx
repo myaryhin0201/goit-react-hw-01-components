@@ -1,4 +1,5 @@
 import Transaction from './Transaction';
+import './Transaction.scss';
 const TransactionHistory = ({transHistory}) => (
 <table className="transaction-history">
     <thead>

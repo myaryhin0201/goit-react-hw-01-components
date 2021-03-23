@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+
 import {Fragment} from 'react';
 const Transaction = ({currency,amount,type}) => (
     <Fragment>
