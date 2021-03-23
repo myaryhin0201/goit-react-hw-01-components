@@ -12,8 +12,7 @@
   color: #596066;
   font-size: 30px;
   font-weight: normal;
-  margin-top: 80px;
-  margin-bottom: 70px;
+  margin: 25px 0;
 }
 .stat-list {
   margin: 0;
@@ -23,18 +22,19 @@
   display: flex;
 }
 .statistics .item {
-  width: calc(100% / 4);
+  width: calc(100% / 5);
   display: flex;
   flex-direction: column;
   color: white;
+  & .label {
+    font-size: 20px;
+    padding-top: 10px;
+    text-transform: lowercase;
+  }
 }
-.label {
-  font-size: 20px;
-  padding-top: 15px;
-  text-transform: lowercase;
-}
+
 .percentage {
-  margin-top: 15px;
-  padding-bottom: 15px;
+  margin-top: 8px;
+  padding-bottom: 10px;
   font-size: 25px;
 }
