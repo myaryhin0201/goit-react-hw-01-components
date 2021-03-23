@@ -27,7 +27,6 @@ const StaticticsList = ({ statics, title }) => (
           <Stats label={stat.label} percentage={stat.percentage} />
         </li>
       ))}
-      npx prettier --write .
     </ul>
   </section>
 );
