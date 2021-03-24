@@ -1,18 +1,26 @@
-import ProfileList from './components/Profile/ProfileList';
-import socialProfiles from './json/social-profile.json';
-import StaticticsList from './components/Statictics/StaticticsList';
-import statdata from './json/stat-data.json';
-import FriendList from './components/FriendList/FriendList';
-import friends from './json/friends.json';
-import TransactionHistory from './components/TransactionHistory/TransactionHistory';
+// библиотеки
 import transactions from './json/transaction.json';
+import socialProfiles from './json/social-profile.json';
+import statdata from './json/stat-data.json';
+import friends from './json/friends.json';
+// Компоненты
+import Profile from './components/Profile/Profile';
+import StaticticsList from './components/Statictics/StaticticsList';
+import FriendList from './components/FriendList/FriendList';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
 import Layout from './components/Layouts/Layouts';
 
 function App() {
   return (
     <Layout>
       <h1>Social Profile</h1>
-      <ProfileList socialProfile={socialProfiles} />
+      <Profile
+        name={socialProfiles.name}
+        tag={socialProfiles.tag}
+        location={socialProfiles.location}
+        avatar={socialProfiles.avatar}
+        stats={socialProfiles.stats}
+      />
       <h1>Statistics</h1>
       <StaticticsList title="Upload Files" statics={statdata} />
       <h1>Friend List</h1>
