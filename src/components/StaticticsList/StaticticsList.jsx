@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import { Fragment } from 'react';
-import Stats from './Stats';
-import './Stats.scss';
+import Stats from './Stats/Stats';
 
 const StaticticsList = ({ statics, title }) => (
   <section className="statistics">

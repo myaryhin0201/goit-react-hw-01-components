@@ -1,3 +1,4 @@
+import './Friend.scss';
 const Friend = ({ isOnline, avatar, name }) => (
   <li className="item">
     <span className={`status ${isOnline}`}></span>

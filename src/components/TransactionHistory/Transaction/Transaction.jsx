@@ -1,4 +1,6 @@
 import { Fragment } from 'react';
+import './Transaction.scss';
+
 const Transaction = ({ currency, amount, type }) => (
   <Fragment>
     <td>{type}</td>

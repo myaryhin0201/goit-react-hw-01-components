@@ -1,3 +1,4 @@
+import './Stats.scss';
 const setColor = () => {
   const randomColor = '#' + Math.random().toString(16).substr(2, 6);
   return randomColor;

@@ -1,6 +1,6 @@
 // Компоненты
 import Profile from './components/Profile/Profile';
-import StaticticsList from './components/Statictics/StaticticsList';
+import StaticticsList from './components/StaticticsList/StaticticsList';
 import FriendList from './components/FriendList/FriendList';
 import TransactionHistory from './components/TransactionHistory/TransactionHistory';
 import Layout from './components/Layouts/Layouts';
