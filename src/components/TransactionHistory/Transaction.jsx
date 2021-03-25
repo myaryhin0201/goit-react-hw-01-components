@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types';
-
 import { Fragment } from 'react';
 const Transaction = ({ currency, amount, type }) => (
   <Fragment>
@@ -8,10 +6,4 @@ const Transaction = ({ currency, amount, type }) => (
     <td>{currency}</td>
   </Fragment>
 );
-
-Transaction.propTypes = {
-  type: PropTypes.string.isRequired,
-  amount: PropTypes.string.isRequired,
-  currency: PropTypes.string.isRequired,
-};
 export default Transaction;

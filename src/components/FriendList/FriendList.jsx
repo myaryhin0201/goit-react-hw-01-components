@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
-import './Friend.scss';
 import Friend from './Friend';
-
+import './Friend.scss';
 const imageDefault = `https://martialartsplusinc.com/wp-content/uploads/2017/04/default-image-620x600.jpg`;
 
 const FriendList = ({ friends }) => (

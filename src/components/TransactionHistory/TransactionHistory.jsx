@@ -1,5 +1,7 @@
+import PropTypes from 'prop-types';
 import Transaction from './Transaction';
 import './Transaction.scss';
+
 const TransactionHistory = ({ transHistory }) => (
   <table className="transaction-history">
     <thead>
@@ -22,4 +24,15 @@ const TransactionHistory = ({ transHistory }) => (
     </tbody>
   </table>
 );
+
+TransactionHistory.propTypes = {
+  transHistory: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+    }),
+  ),
+};
 export default TransactionHistory;

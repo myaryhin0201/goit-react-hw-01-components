@@ -1,6 +1,7 @@
+import PropTypes from 'prop-types';
+import { Fragment } from 'react';
 import Stats from './Stats';
 import './Stats.scss';
-import { Fragment } from 'react';
 
 const StaticticsList = ({ statics, title }) => (
   <section className="statistics">
@@ -14,4 +15,17 @@ const StaticticsList = ({ statics, title }) => (
     </ul>
   </section>
 );
+StaticticsList.defaultProps = {
+  title: '',
+};
+StaticticsList.propTypes = {
+  title: PropTypes.string,
+  statics: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    }),
+  ),
+};
 export default StaticticsList;

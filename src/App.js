@@ -1,14 +1,14 @@
-// библиотеки
-import transactions from './json/transaction.json';
-import socialProfiles from './json/social-profile.json';
-import statdata from './json/stat-data.json';
-import friends from './json/friends.json';
 // Компоненты
 import Profile from './components/Profile/Profile';
 import StaticticsList from './components/Statictics/StaticticsList';
 import FriendList from './components/FriendList/FriendList';
 import TransactionHistory from './components/TransactionHistory/TransactionHistory';
 import Layout from './components/Layouts/Layouts';
+// данные
+import transactions from './json/transaction.json';
+import socialProfiles from './json/social-profile.json';
+import statdata from './json/stat-data.json';
+import friends from './json/friends.json';
 
 function App() {
   return (

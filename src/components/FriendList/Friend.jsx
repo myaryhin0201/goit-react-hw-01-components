@@ -5,6 +5,5 @@ const Friend = ({ isOnline, avatar, name }) => (
     <p className="name">{name}</p>
   </li>
 );
-Friend.defaultProps = {};
 
 export default Friend;

@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 const setColor = () => {
   const randomColor = '#' + Math.random().toString(16).substr(2, 6);
   return randomColor;
@@ -14,8 +13,4 @@ const Stats = ({ percentage, label }) => (
     <span className="percentage">{percentage}%</span>
   </li>
 );
-Stats.propTypes = {
-  percentage: PropTypes.number.isRequired,
-  label: PropTypes.string.isRequired,
-};
 export default Stats;
