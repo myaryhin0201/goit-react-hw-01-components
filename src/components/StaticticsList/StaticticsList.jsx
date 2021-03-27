@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import { Fragment } from 'react';
 import Stats from './Stats/Stats';
 
 const StaticticsList = ({ statics, title }) => (
@@ -7,9 +6,7 @@ const StaticticsList = ({ statics, title }) => (
     {title ? <h2 className="title">{title}</h2> : ''}
     <ul className="stat-list">
       {statics.map(stat => (
-        <Fragment key={stat.id}>
-          <Stats label={stat.label} percentage={stat.percentage} />
-        </Fragment>
+        <Stats key={stat.id} label={stat.label} percentage={stat.percentage} />
       ))}
     </ul>
   </section>

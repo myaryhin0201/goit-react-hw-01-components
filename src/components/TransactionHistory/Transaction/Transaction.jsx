@@ -1,11 +1,10 @@
-import { Fragment } from 'react';
 import './Transaction.scss';
 
 const Transaction = ({ currency, amount, type }) => (
-  <Fragment>
+  <tr>
     <td>{type}</td>
     <td>{amount}</td>
     <td>{currency}</td>
-  </Fragment>
+  </tr>
 );
 export default Transaction;

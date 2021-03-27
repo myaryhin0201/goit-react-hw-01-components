@@ -6,13 +6,12 @@ const imageDefault = `https://martialartsplusinc.com/wp-content/uploads/2017/04/
 const FriendList = ({ friends }) => (
   <ul className="friend-list">
     {friends.map(friend => (
-      <div key={friend.id}>
-        <Friend
-          isOnline={friend.isOnline}
-          avatar={friend.avatar}
-          name={friend.name}
-        />
-      </div>
+      <Friend
+        key={friend.id}
+        isOnline={friend.isOnline}
+        avatar={friend.avatar}
+        name={friend.name}
+      />
     ))}
   </ul>
 );
